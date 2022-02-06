@@ -27,18 +27,26 @@
     }
     #grid ul{
       border-right:1px solid gray;
-      width:100px; margin: 0px; padding:20px;
+      width:100px; margin: 0px; padding:20epx;
     }
     #grid{
       display: grid;
       grid-template-columns: 150px 1fr
     }
+    @media(max-width:800px){
+      #grid ul{
+        border-right: none;      }
+      #grid {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1><a href="index.html" style="text-decoration:underline; color:green">SANGWOO's LIFE</a></h1>
+  <h1><a href="index.html" style="text-decoration:underline; color:green">SANGWOO's LIFE<br>지금 여기서 구경할건 캐나다 내용밖에 없습니다^^</a></h1>
 <div id="grid">
   <ul>
+    <li><input type="text" placeholder="Search">
     <li><a href="w1.html">IN KOREA</a></li>
     <li><a href="w2.html">IN JAPAN</a></li>
     <li><a href="w3.html">IN VIETNAM</a></li>
@@ -46,7 +54,6 @@
     <li><a href="csia.html">CSIA</a></li>
   </ul>
   <div>
-      This web is restricted only to my family and some of my friends.<br>
         <p>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/yEJy97-T4yQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/sveUlcNw1WA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
